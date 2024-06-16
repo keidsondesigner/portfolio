@@ -1,3 +1,4 @@
+@import "./_variables";
 /* Config Default  */
 html {
   scroll-behavior: smooth;
@@ -5,19 +6,6 @@ html {
   /* Config scrollbar firefox  */
   scrollbar-color: $primary;
   scrollbar-width: thin;
-}
-
-html::-webkit-scrollbar {
-  width: 6px;
-}
-
-html::-webkit-scrollbar-track {
-  background-color: $primary;
-}
-
-html::-webkit-scrollbar-thumb {
-  background-color: $primary;
-  border-radius: 6px;
 }
 
 body {
@@ -54,5 +42,24 @@ body {
   .btn-space-entries {
     margin-right: 0 !important;
     margin-bottom: 1.5rem !important;
+  }
+}
+
+.card-projects {
+  transition: transform 300ms;
+  border: solid 1px $primary;
+
+  &:hover {
+    transform: scale(1.05);
+    border: solid 1px $secondary;
+  }
+}
+
+.card-skills {
+  border: solid 1px $secondary;
+  transition: border 0.3s ease;
+
+  &:hover {
+    border: solid 1px $primary;
   }
 }
