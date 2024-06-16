@@ -1,9 +1,7 @@
 @import "./_variables";
-/* Config Default  */
+
 html {
   scroll-behavior: smooth;
-
-  /* Config scrollbar firefox  */
   scrollbar-color: $primary;
   scrollbar-width: thin;
 }
