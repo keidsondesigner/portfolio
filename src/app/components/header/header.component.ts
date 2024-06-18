@@ -9,5 +9,7 @@ import { RouterModule } from '@angular/router';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-
+  sum(a: number, b: number): number {
+    return a + b;
+  }
 }
